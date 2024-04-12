@@ -1,8 +1,3 @@
-# Name: Gabriel Larot
-# Email: gabriel.larot@sjsu.edu
-# ID: 016876301
-# Programming Assignment 2 - Iris Dataset Classifiers
-
 # Using Python Interpreter 3.9.6
 from sklearn.datasets import load_iris
 from sklearn.naive_bayes import GaussianNB
@@ -52,7 +47,7 @@ class IrisClassifier():
                     print(f'Accuracy: {v.best_score_:0.04f}\n')
         
     # Train the model using GridSearchCV to identify the best hyperparameters for each metric for each model
-    # and fit each model on the trainnig data
+    # and fit each model on the training data
     def train(self, X_train, y_train):
         metrics = {}
         scores = ['accuracy', 'f1_macro', 'roc_auc_ovo']
